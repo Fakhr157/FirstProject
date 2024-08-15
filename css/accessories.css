@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.top-header {
+    background: #312d2d;
+    width: 100%;
+    justify-content: space-around;
+    Color: #fff;
+    font-size: 16px;
+    height: 45px;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.support {
+    gap: 20px;
+}
+
+.color-red {
+    color: red;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #ffff;
+    justify-content: space-around;
+    box-shadow: 0px 5px 12px rgb(143, 141, 141);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 60px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: jost, Arial, Helvetica, sans-serif;
+}
+
+.signs i {
+
+    font-size: 18px;
+
+}
+
+.signs ul {
+    display: flex;
+    gap: 15px;
+}
+
+.signs li {
+    list-style: none;
+}
+
+.first-banner {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.accessories-title {
+    position: absolute;
+    top: 42%;
+    left: 43%;
+}
+
+.accessories-title h1 {
+    margin-bottom: 12px;
+}
+
+.acessories-sub-title {
+    margin-left: 28px;
+    display: flex;
+    gap: 17px;
+}
+
+.accessories-container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.left-column {
+    width: 20%;
+    padding:0px 20px;
+}
+
+.round-button {
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    border: none;
+    background: red;
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 11px;
+}
+
+
+.right-column {
+    width: 80%;
+    padding-left: 12px;
+}
+
+.sub-titles {
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    width:100%;
+}
+
+.anchor{
+    text-align:right;
+    color: #222;
+}
+
+.digital {
+    padding: 8px 22px;
+    margin-top: 8px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+
+}
+
+.checkmark {
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.price{
+    font-family:'FontAwesome';
+}
+
+.custom-checkbox {
+    padding-bottom: 15px;
+}
+
+.product-detail{
+    margin: 35px 9px 0;
+}
+
+.Showcase{
+    padding-bottom: 12px;
+}
+
+.sub-banners{
+    padding-bottom: 20px;
+}
+
+.pic img{
+    width:100%;
+}
+
+.description {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.colors {
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    border: none;
+    background: grey;
+    display: inline-block;
+    padding: 9px 9px;
+    font-size: 11px;
+    margin: 0px 6px 5px 0px;
+}
+
+.filter{
+    font-size: 17px;
+    padding: 10px 0px 0 0;
+    align-items: baseline;
+}
+
+input[type="radio"]{ 
+margin-left: 0;
+}
+
+.sort-by{
+    font-size: 21px;
+    padding: 13px 9px 0 0;
+    font-family: arial;
+}
+.sort-by i{
+    margin: 4px;
+}
+
+.activ{
+    font-size: 22px;
+    padding: 20px 0px 20px 0;
+}
+
+.product-Container{
+    width:100%;
+    flex-wrap: wrap;
+    gap: 49px;
+}
+
+.not-active{
+    display:none;
+}
+
+.product-banner:hover .active{
+  display: none;
+}
+
+.product-banner:hover .not-active{
+    display: block;
+}
+
+.product-banner{
+    width:22%;
+    
+}
+
+.information{
+    width: 100%;
+    background: #201e1e;
+    padding: 5em 0;
+    margin: 10px 0px 0;
+
+}
+
+.detail{
+    width: 90%;
+    margin: auto;
+    color: #666;
+    display: flex;
+}
+.Apparel {
+    list-style: none;
+    padding: 0;
+
+}
+
+.email {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+.info {
+    color: #fff;
+    font-weight: 500;
+}
+.options {
+    width: 22%;
+}
+
+.options li {
+    font-size: 17px;
+    line-height: 1.6;
+
+}
+.options i {
+    padding-right: 12px;
+    font-size: 17px;
+}
+
+.social i {
+    font-size: 15px;
+    background: #fdfafa;
+    padding: 11px;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.social ul {
+    gap: 10px;
+    padding: 0;
+}
+
+.social li:hover i {
+    color: #fff;
+    background: red;
+}

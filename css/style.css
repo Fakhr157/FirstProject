@@ -1,0 +1,913 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 90%;
+    margin: auto;
+    margin: 40px auto;
+    overflow: hidden;
+
+}
+
+.services-container,
+.catagories-container,
+.product-section-title {
+    width: 100%;
+    display: flex;
+    margin: 40px auto;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.service-icon {
+    margin-bottom: 10px;
+}
+
+.service-icon i {
+    font-size: 30px;
+
+}
+
+.service {
+    width: 20%;
+    text-align: center;
+
+}
+
+.service-desc {
+    margin: 0;
+}
+
+.service-title {
+    font-weight: bold;
+    padding: 5px;
+    color: #222;
+}
+
+.service-desc {
+    color: #666;
+}
+
+/* .catagories-container{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    
+    } */
+.catagory {
+    width: 25%;
+    position: relative;
+
+}
+
+.catagory img {
+    margin: 40px 0 0 0;
+    width: 98%;
+    transition: .8s;
+}
+
+.catagory button {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    bottom: 5%;
+    height: 49px;
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.catagory img:hover {
+    width: 102%;
+}
+
+.catagory button:hover {
+    color: white;
+    background: black;
+}
+
+.product-section-title .title {
+    font-weight: 400;
+    font-size: 45px;
+    width: 50%;
+}
+
+.Products-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 18%;
+    position: relative;
+}
+
+.whishlist-button {
+    position: absolute;
+    top: 2%;
+    right: 40px;
+    width: 0px;
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.whishlist-button ul {
+    padding: 0;
+    margin: 0;
+}
+
+.whishlist-button li {
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+    background: rgb(238, 235, 235);
+    padding: 10px;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    transition: 1s;
+    background: white;
+}
+
+.whishlist-button li:hover {
+    background: red;
+
+}
+
+.product:hover .whishlist-button {
+    width: 60px;
+    right: 10px;
+    opacity: 1;
+}
+
+.type {
+    color: #fff;
+    background: rgb(41, 136, 41);
+    position: absolute;
+    border: none;
+    top: 45px;
+    left: 15px;
+    font-size: 12px;
+    padding: 4px 6px;
+    width: 0x;
+    opacity: 0;
+}
+
+.change {
+    top: 12px;
+}
+
+.offer {
+    top: 17px;
+}
+
+.product:hover .type {
+    display: block;
+    opacity: 1;
+    transition: .4s;
+
+}
+
+.product img {
+    width: 100%;
+}
+
+.product-section-title button {
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    background: white;
+    padding: 0 50px;
+}
+
+.price {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.desc {
+    color: #666666;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.button {
+    width: 170px;
+    height: 53px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: bold;
+    border: 1px solid black;
+    border-radius: 2px;
+    background: #ffff;
+    color: #222;
+    padding: 10px 20px;
+    margin: 5% 50%;
+}
+
+.button:hover {
+    background: #222;
+    transition: .5s;
+    color: #ffff;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: jost, Arial, Helvetica, sans-serif;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 60px;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #ffff;
+    justify-content: space-around;
+    box-shadow: 0px 5px 12px rgb(143, 141, 141);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.Title {
+    width: 100%;
+
+}
+
+.signs i {
+
+    font-size: 18px;
+
+}
+
+.signs ul {
+    display: flex;
+    gap: 15px;
+}
+
+.signs li {
+    list-style: none;
+}
+
+.banner-price {
+    font-size: 18px;
+    color: #222
+}
+
+.banner-price span {
+    color: red;
+}
+
+.banner a {
+    color: #000;
+}
+
+.banner a:hover {
+    text-decoration: none;
+}
+
+.banner img {
+    width: 98%;
+    transition: 0.5s;
+
+}
+
+.banner-container {
+    display: flex;
+    gap: 40px;
+}
+
+.banner-discount {
+    font-size: 15px;
+    font-weight: 500;
+    color: #443d3d;
+    line-height: 3;
+}
+
+.banner-title {
+    font-size: 35px;
+    margin: 0;
+
+}
+
+.banner-content {
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    font-weight: 500;
+    top: 10px;
+}
+
+.banner {
+    position: relative;
+    width: 33%;
+}
+
+.banner img:hover {
+    width: 102%;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 1000px;
+
+}
+
+.main-banner {
+    position: relative;
+}
+
+.Deals-On {
+    width: 50%;
+    position: absolute;
+    left: 39%;
+    font-weight: 500;
+    top: 48%;
+}
+
+.Collection {
+    font-size: 22px;
+    letter-spacing: .3px;
+    font-weight: 500;
+    color: #4b4343;
+    margin-left: 14%;
+}
+
+.Holiday {
+    font-size: 68px;
+    margin-top: 7px;
+    margin-bottom: 1px;
+    color: #302c2c;
+}
+
+.view {
+    font-size: 16px;
+    color: #fff;
+    background: #222;
+    padding: 14px;
+    width: 20%;
+    margin: 3% 16%;
+}
+
+.offers ul {
+    display: flex;
+    gap: 191px;
+    font-size: 106%;
+    color: #302c2c;
+    float: right;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.economical-offers {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+
+.day-deal {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 43px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    top: 60%;
+    position: absolute;
+    right: 17%;
+    background: #ffff;
+    width: 66%;
+    padding: 2% 4%;
+}
+
+
+
+.off {
+    color: #fff;
+    background: crimson;
+    position: absolute;
+    border: none;
+    top: 18px;
+    left: 15px;
+    font-size: 13px;
+    padding: 4px 8px;
+
+
+}
+
+.dollar {
+    width: 65px;
+}
+
+.price-content {
+    color: red;
+    font-size: 117%;
+}
+
+.fleece-hoodie {
+    color: #242121
+}
+
+.catwalk {
+    color: #666666;
+}
+
+.New-fashion {
+    width: 90%;
+}
+
+.New-fashion img {
+    width: 100%;
+
+
+}
+
+.New-fashion {
+    position: relative;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.items {
+    width: 50%;
+    position: absolute;
+    left: 7%;
+    font-weight: 500;
+    top: 17%;
+    font-size: 204%;
+}
+
+.items span {
+    color: red;
+    font-weight: 550;
+    font-size: 112%;
+}
+
+.orginal {
+    margin-bottom: 2%;
+    font-size: 74%;
+}
+
+.Fashion {
+    margin: 0;
+    color: #242121;
+    font-size: 204%;
+}
+
+.this-month {
+    font-size: 77%;
+    color: #222;
+}
+
+.Shop {
+    color: #ffff;
+    background: #222222;
+    padding: 13px;
+    font-size: 52%;
+    width: 19%;
+}
+
+.comma {
+    font-size: 51px;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+.coat {
+    text-align: center;
+}
+
+.description {
+    width: 55%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.name {
+    text-align: center;
+    font-size: 22px;
+    padding: 35px 0 8px;
+}
+
+.Sub-heading {
+    text-align: center;
+    font-size: 19px;
+    color: #666;
+    border-bottom: 1px solid #e4d9d9;
+    padding-bottom: 5%;
+}
+
+.latest-blog {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+.blog-item {
+    width: 25%;
+}
+
+.blog-item img {
+    width: 100%;
+}
+
+.blog {
+    font-size: 46px;
+    margin: 105px 0px 23px 0px;
+
+}
+
+.date {
+    color: red;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.latest-blog a {
+    color: #222222;
+    transition: 1s;
+
+}
+
+.latest-blog a:hover {
+    text-decoration: none;
+
+}
+
+.mini-banners {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* background: red; */
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.mini-banners img {
+    width: 14%;
+}
+
+.information {
+    width: 100%;
+    background: #201e1e;
+    padding: 5em 0;
+    margin: 10px 0px 0;
+    
+}
+
+.details {
+    width: 90%;
+    margin: auto;
+    color: #666;
+    display: flex;
+}
+
+.Apparel {
+    list-style: none;
+    padding: 0;
+
+}
+
+.email {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+.info {
+    color: #fff;
+    font-weight: 500;
+}
+
+.options {
+    width: 22%;
+}
+
+.options li {
+    font-size: 17px;
+    line-height: 1.6;
+
+}
+
+.options i {
+    padding-right: 12px;
+    font-size: 17px;
+}
+
+.clothing {
+    width: 20%;
+}
+
+.clothing img {
+    width: 100%;
+}
+
+.clothing span {
+    display: flex;
+}
+
+.sub {
+    color: #fff;
+    background: red;
+    width: 27%;
+    padding: 3%;
+    opacity: .65;
+    line-height: 1.6;
+    font-weight: bold;
+    margin: 9px 0;
+    border: none;
+}
+
+.sub:hover {
+    background: #302c2c;
+
+    transition: .5s;
+}
+
+.non-active {
+    display: none;
+    transition: 1s;
+}
+
+.product:hover .active {
+    display: none;
+
+}
+
+.product:hover .non-active {
+
+    display: block;
+}
+
+.social i {
+    font-size: 15px;
+    background: #fdfafa;
+    padding: 11px;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.social ul {
+    gap: 10px;
+    padding: 0;
+}
+
+.social li:hover i {
+    color: #fff;
+    background: red;
+}
+
+.clothing:hover .active {
+    display: none;
+
+}
+
+.clothing:hover .non-active {
+
+    display: block;
+}
+
+.clothing {
+    width: 18%;
+    position: relative;
+}
+
+.whishlist-button {
+    position: absolute;
+    top: 2%;
+    right: 40px;
+    width: 0px;
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.whishlist-button ul {
+    padding: 0;
+    margin: 0;
+}
+
+.whishlist-button li {
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+    background: rgb(238, 235, 235);
+    padding: 10px;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    transition: 1s;
+    background: white;
+}
+
+.whishlist-button li:hover {
+    background: red;
+
+}
+
+.clothing:hover .whishlist-button {
+    width: 60px;
+    right: 15px;
+    opacity: 1;
+}
+
+.clothing:hover .type {
+    display: block;
+    opacity: 1;
+    transition: .4s;
+    width: 15%;
+    top: 45px;
+}
+
+.sold {
+    position: absolute;
+    top: 7%;
+    left: 15px;
+    width: 70px;
+    background: orange;
+    font-size: 12px;
+    padding: 4px;
+    margin: 0px;
+    font-weight: 600;
+    display: none;
+    border: none;
+}
+
+.product:hover .sold {
+    display: block;
+    opacity: 1;
+    transition: 1s;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.confirmation {
+    position: absolute;
+    display: block;
+
+}
+
+.first-banner img {
+    width: 100%;
+}
+
+.first-banner {
+    position: relative;
+}
+
+.Blouson {
+    position: absolute;
+    width: 50%;
+    left: 7%;
+    font-weight: 500;
+    top: 33%;
+    font-size: 154%;
+    margin: 0;
+}
+
+.peach {
+    font-size: 3em;
+    margin: 0;
+}
+
+
+.shop {
+    color: #ffff;
+    background: #222222;
+    padding: 13px;
+    font-size: 52%;
+    width: 13%;
+    margin-top: 2%;
+}
+
+.Blouson span {
+    color: red;
+    font-weight: 600;
+}
+
+.offer-text {
+    text-align: center;
+    Color: #fff;
+
+}
+
+.top-header {
+    background: #312d2d;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    Color: #fff;
+    font-size: 16px;
+    height: 45px;
+    align-items: center;
+    font-family: Jost, Arial, Helvetica, sans-serif;
+
+}
+
+.season-offer {
+    width: 40%;
+    text-align: center;
+
+}
+
+.support {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-family: arial;
+}
+
+.top-header a:hover {
+    text-decoration: none;
+}
+
+.language {
+    display: flex;
+    gap: 24px;
+    color: #fff;
+}
+
+.top-header a {
+    color: red;
+}
+
+.privacy {
+    text-align: center;
+    color: #fff;
+    background: #222;
+    font-family: none;
+    padding: 14px;
+    font-size: 19px;
+    border-top: 1px solid;
+}
+
+.privacy a {
+    color: #fff;
+}
+
+.privacy a:hover {
+    text-decoration: none;
+}
+
+.accept {
+    width: 73px;
+    padding: 7px;
+    margin-left: 9px;
+    font-family: revert;
+
+}
+
+.cookies {
+    font-size: 21px;
+}
