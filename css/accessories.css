@@ -270,6 +270,7 @@ margin-left: 0;
 }
 .options {
     width: 22%;
+    padding-left: 81px;
 }
 
 .options li {
@@ -297,5 +298,12 @@ margin-left: 0;
 
 .social li:hover i {
     color: #fff;
+    background: red;
+}
+
+.sub{
+    padding: 15px;
+    margin: 20px 0;
+    width: 158px;
     background: red;
 }
