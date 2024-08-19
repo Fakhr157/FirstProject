@@ -219,6 +219,7 @@ margin-left: 0;
     width:100%;
     flex-wrap: wrap;
     gap: 49px;
+    position: relative;
 }
 
 .not-active{
@@ -306,4 +307,42 @@ margin-left: 0;
     margin: 20px 0;
     width: 158px;
     background: red;
+}
+
+.whishlist-button{
+    position: absolute;
+    top: 20px;
+    left: 223px;
+    background: #fff;
+    color: #000;
+    right: 166px;
+    width: 42px;;
+}
+
+.whishlist-button li{
+list-style: none;
+padding: 10px;
+background: white;
+}
+
+
+.type {
+    color: #fff;
+    background: rgb(41, 136, 41);
+    position: absolute;
+    border: none;
+    top: 45px;
+    left: 15px;
+    font-size: 12px;
+    padding: 4px 6px;
+    width: 0x;
+    opacity: 0;
+}
+
+.change {
+    top: 0px;
+}
+
+.product-banner img{
+    width:100%;
 }
