@@ -146,7 +146,7 @@ body {
 
 }
 
-.product:hover .whishlist-button {
+.product:hover.whishlist-button {
     width: 60px;
     right: 10px;
     opacity: 1;
@@ -173,11 +173,10 @@ body {
     top: 17px;
 }
 
-.product:hover .type {
+.product:hover.type {
     display: block;
     opacity: 1;
     transition: .4s;
-
 }
 
 .product img {
