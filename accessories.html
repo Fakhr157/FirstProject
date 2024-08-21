@@ -307,13 +307,25 @@
                 <i class="fa-solid fa-list"></i>
                 <span>There are 3 products.</span>
             </div>
-            <div class=" activ">
-                Active Filters
-                <span class="filter-buttons">
+            <div class="d-flex activ">
+               
+                <div class="filter-buttons">
+                    Active Filters
                     <button class="round-button">X</button>
                     <span>Color:</span>
                     <span> Black</span>
-                </span>
+                </div>
+                <div class="form">
+                    <label>Sort By:</label>
+                    <select>
+                        <option>Relevance</option>
+                        <option>Sales, highest to lowest</option>
+                        <option>Name, A to Z</option>
+                        <option>Name, Z to A</option>
+                        <option>Price, low to high</option>
+                        <option>Price, high to low</option>
+                    </select>
+                </div>
             </div>
             <div class="d-flex product-Container ">
                 <div class="product-banner">
@@ -331,7 +343,8 @@
                             <li><i class="fa-solid fa-bag-shopping"></i></li>
                         </ul>
                     </div>
-                    <button class="type change">New</button>
+                    <button class="type change-down">New</button>
+
                 </div>
                 <div class="product-banner">
                     <img class="active" src="image/truckerjacket.jpg">
@@ -349,6 +362,7 @@
                         </ul>
                     </div>
                     <button class="type change">New</button>
+                    <buton class="offer">-7%</buton>
                 </div>
                 <div class="product-banner ">
                     <img class="active" src="image/about-us/brown-bear-vector-graphics.jpg">
@@ -365,7 +379,7 @@
                             <li><i class="fa-solid fa-bag-shopping"></i></li>
                         </ul>
                     </div>
-                    <button class="type change">New</button>
+                    <button class="type change-down">New</button>
                 </div>
                 <div class="product-banner">
                     <img class="active" src="image/about-us/hummingbird-notebook.jpg">
@@ -383,6 +397,7 @@
                         </ul>
                     </div>
                     <button class="type change">New</button>
+                    <buton class="offer">-8%</buton>
                 </div>
                 <div class="product-banner">
                     <img class="active" src="image/hummingbird-vector-graphics.jpg">
@@ -399,7 +414,8 @@
                             <li><i class="fa-solid fa-bag-shopping"></i></li>
                         </ul>
                     </div>
-                    <button class="type change">New</button>
+                    <button class="type change-down">New</button>
+
                 </div>
                 <div class="product-banner">
                     <img class="active" src="image/mug-the-best-is-yet-to-come.jpg">
@@ -417,6 +433,7 @@
                         </ul>
                     </div>
                     <button class="type change">New</button>
+                    <buton class="offer-extra">-$12.00%</buton>
                 </div>
                 <div class="product-banner">
                     <img class="active" src="image/lisa charm.jpg">
@@ -433,24 +450,7 @@
                             <li><i class="fa-solid fa-bag-shopping"></i></li>
                         </ul>
                     </div>
-                    <button class="type change">New</button>
-                </div>
-                <div class="product-banner">
-                    <img class="active" src="image/hooded sweatshirt.jpg">
-                    <img class="not-active" src="image/regular-shirt.jpg">
-                    <p class="product-info">
-                    <p class="style">Fashion</p>
-                    <p>Polly Tops for Women </p>
-                    <p class="color-red"> $82.00</p>
-                    <div class="whishlist-button">
-                        <ul>
-                            <li><i class="fa-regular fa-heart"></i></li>
-                            <li><i class="fa-solid fa-repeat"></i></li>
-                            <li><i class="fa-solid fa-maximize"></i></li>
-                            <li><i class="fa-solid fa-bag-shopping"></i></li>
-                        </ul>
-                    </div>
-                    <button class="type change">New</button>
+                    <button class="type change-down">New</button>
                 </div>
                 <div class="product-banner">
                     <img class="active" src="image/classic jacket.jpg">
@@ -468,6 +468,145 @@
                         </ul>
                     </div>
                     <button class="type change">New</button>
+                    <buton class="offer">-7%</buton>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/brown-bear-printed-sweater.jpg">
+                    <img class="not-active" src="image/regular-shirt.jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"> $82.00</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change">New</button>
+                    <buton class="offer">-12%</buton>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/t-shirt gray.jpg">
+                    <img class="not-active" src="image/polo-shirt.jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"> $82.00</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change-down">New</button>
+                    <buton class="Sold">SOLD OUT</buton>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/regular-shirt.jpg">
+                    <img class="not-active" src="image/hooded sweatshirt.jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"> $82.00</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change-down">New</button>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/polo-shirt.jpg">
+                    <img class="not-active" src="image/mug-the-best-is-yet-to-come.jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"> $82.00</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change-down">New</button>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/militry-jacket.jpg">
+                    <img class="not-active" src="image/militry-jacket.jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"><s>$67.00</s> $56.95</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change-down">New</button>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/about-us/hummingbird-notebook (1).jpg">
+                    <img class="not-active" src="image/about-us/hummingbird-notebook.jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"> $82.00</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change-down">New</button>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/hooded sweatshirt.jpg">
+                    <img class="not-active" src="image/regular-shirt.jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"> $82.00</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change-down">New</button>
+                </div>
+                <div class="product-banner">
+                    <img class="active" src="image/about-us/hummingbird-notebook.jpg">
+                    <img class="not-active" src="image/about-us/hummingbird-notebook (1).jpg">
+                    <p class="product-info">
+                    <p class="style">Fashion</p>
+                    <p>Polly Tops for Women </p>
+                    <p class="color-red"> $82.00</p>
+                    <div class="whishlist-button">
+                        <ul>
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-repeat"></i></li>
+                            <li><i class="fa-solid fa-maximize"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        </ul>
+                    </div>
+                    <button class="type change-down">New</button>
                 </div>
             </div>
         </div>
