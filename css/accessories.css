@@ -1,12 +1,19 @@
 body {
-     font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0%;
     margin: 0%;
     font-size: 22px;
 }
 
+:root {
+    --black: #312d2d;
+    --white: #ffffff;
+    --green: green;
+    --hoverbtn: rgb(185, 178, 166);
+}
+
 .top-header {
-    background: #312d2d;
+    background: var(--black);
     width: 100%;
     justify-content: space-around;
     Color: #fff;
@@ -14,8 +21,9 @@ body {
     height: 45px;
     align-items: center;
 }
-.filter-buttons{
-    width:76%;
+
+.filter-buttons {
+    width: 65%;
 }
 
 .d-flex {
@@ -81,7 +89,8 @@ body {
     margin-bottom: 25px;
     width: 100%;
 }
-.first-banner img{
+
+.first-banner img {
     width: 100%;
 }
 
@@ -109,7 +118,7 @@ body {
 
 .left-column {
     width: 20%;
-    padding:0px 20px;
+    padding: 0px 20px;
 }
 
 .round-button {
@@ -133,11 +142,16 @@ body {
     margin-bottom: 15px;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
-    width:100%;
+    width: 100%;
 }
 
-.anchor{
-    text-align:right;
+.anchor {
+    text-align: right;
+
+}
+
+.anchor a {
+    text-align: right;
     color: #222;
 }
 
@@ -154,31 +168,31 @@ input[type="checkbox"] {
 .checkmark {
     justify-content: space-between;
     width: 100%;
-    
+
 }
 
-.price{
-    font-family:'FontAwesome';
+.price {
+    font-family: 'FontAwesome';
 }
 
 .custom-checkbox {
     padding-bottom: 15px;
 }
 
-.product-detail{
+.product-detail {
     margin: 35px 9px 0;
 }
 
-.Showcase{
+.Showcase {
     padding-bottom: 12px;
 }
 
-.sub-banners{
+.sub-banners {
     padding-bottom: 20px;
 }
 
-.pic img{
-    width:100%;
+.pic img {
+    width: 100%;
 }
 
 .description {
@@ -198,62 +212,64 @@ input[type="checkbox"] {
     margin: 0px 6px 5px 0px;
 }
 
-.filter{
+.filter {
     font-size: 17px;
     padding: 10px 0px 0 0;
     align-items: baseline;
 }
 
-input[type="radio"]{ 
-margin-left: 0;
+input[type="radio"] {
+    margin-left: 0;
 }
 
-.sort-by{
+.sort-by {
     font-size: 21px;
     padding: 13px 9px 0 0;
     font-family: arial;
 }
-.sort-by i{
+
+.sort-by i {
     margin: 4px;
 }
 
-.activ{
+.activ {
     font-size: 25px;
     padding: 20px 0px 20px 0;
     width: 100%;
 }
-.activ label{
+
+.activ label {
     text-align: end;
 }
 
-.product-Container{
-    width:100%;
+.product-Container {
+    width: 100%;
     flex-wrap: wrap;
     gap: 49px;
     position: relative;
 }
 
-.not-active{
-    display:none;
+.not-active {
+    display: none;
 }
 
-.product-banner:hover .active{
-  display: none;
-  transition: 2.5s;
+.product-banner:hover .active {
+    display: none;
+    transition: 2.5s;
 }
 
-.product-banner:hover .not-active{
+.product-banner:hover .not-active {
     display: block;
     transition: 2.5s;
 }
 
-.product-banner{
-    width:22%;
+.product-banner {
+    width: 22%;
     position: relative;
-    
+
 }
 
-.information{
+.information {
     width: 100%;
     background: #201e1e;
     padding: 5em 0;
@@ -261,12 +277,13 @@ margin-left: 0;
 
 }
 
-.detail{
+.detail {
     width: 90%;
     margin: auto;
     color: #666;
     display: flex;
 }
+
 .Apparel {
     list-style: none;
     padding: 0;
@@ -283,6 +300,7 @@ margin-left: 0;
     color: #fff;
     font-weight: 500;
 }
+
 .options {
     width: 22%;
     padding-left: 81px;
@@ -293,6 +311,7 @@ margin-left: 0;
     line-height: 1.6;
 
 }
+
 .options i {
     padding-right: 12px;
     font-size: 17px;
@@ -316,14 +335,14 @@ margin-left: 0;
     background: red;
 }
 
-.sub{
+.sub {
     padding: 15px;
     margin: 20px 0;
     width: 158px;
     background: red;
 }
 
-.whishlist-button{
+.whishlist-button {
     position: absolute;
     top: 0px;
     left: 285px;
@@ -334,12 +353,13 @@ margin-left: 0;
     font-size: 5px;
 }
 
-.whishlist-button li{
-list-style: none;
-padding: 6px;
-border-radius: 50px;
+.whishlist-button li {
+    list-style: none;
+    padding: 6px;
+    border-radius: 50px;
 }
-.whishlist-button i{
+
+.whishlist-button i {
     background: white;
     font-size: 30px;
     border-radius: 50px;
@@ -356,35 +376,37 @@ border-radius: 50px;
     padding: 6px 6px;
     width: 66px;
     opacity: 0;
-    left:15px;
+    left: 15px;
 }
 
 .change {
     top: 55px;
 }
 
-.product-banner img{
-    width:100%;
+.product-banner img {
+    width: 100%;
 }
-   .product-banner:hover .whishlist-button {
+
+.product-banner:hover .whishlist-button {
     width: 60px;
     right: 10px;
     opacity: 1;
     transition: 1.5s;
-    
-}   
+
+}
 
 
-.whishlist-button i:hover{
+.whishlist-button i:hover {
     background: red;
 }
 
- .product-banner:hover .type{
-    display:block;
+.product-banner:hover .type {
+    display: block;
     opacity: 1;
     transition: 1.5s;
-} 
-.offer{
+}
+
+.offer {
     color: #fff;
     background: red;
     position: absolute;
@@ -392,11 +414,11 @@ border-radius: 50px;
     font-size: 16px;
     padding: 6px 6px;
     width: 35px;
-    left:15px;
-    top:20px;
+    left: 15px;
+    top: 20px;
 }
 
-.offer-extra{
+.offer-extra {
     color: #fff;
     background: red;
     position: absolute;
@@ -404,15 +426,15 @@ border-radius: 50px;
     font-size: 16px;
     padding: 6px 6px;
     width: 66px;
-    left:15px;
-    top:20px;
+    left: 15px;
+    top: 20px;
 }
 
-.change-down{
-    top:22px;
+.change-down {
+    top: 22px;
 }
 
-.Sold{
+.Sold {
     color: #fff;
     position: absolute;
     border: none;
@@ -425,18 +447,72 @@ border-radius: 50px;
     opacity: 0;
 }
 
-.product-banner:hover .Sold{
+.product-banner:hover .Sold {
     opacity: 1;
     transition: 1.5s;
     display: bock;
 }
 
-.form{
+.form {
     width: 30%;
 }
 
-.form select{
-    font-size:21px;
+.form select {
+    font-size: 21px;
     padding: 11px;
-    width:73%;
+    width: 81%;
+    border: 1px solid;
 }
+
+.privacy {
+    text-align: center;
+    color: #fff;
+    background: #222;
+    font-family: none;
+    padding: 14px;
+    font-size: 19px;
+    border-top: 1px solid;
+}
+
+.privacy a {
+    color: #fff;
+}
+
+.privacy a:hover {
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) and (max-width: 665px) {
+    .privacy {
+        font-size: 10px;
+    }
+  }
+
+
+  .background-container {
+    position: relative;
+    background-image: url('image/about-us/breadcrumb_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Or any desired height */
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the overlay */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
