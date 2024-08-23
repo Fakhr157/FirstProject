@@ -5,15 +5,11 @@ body {
 }
 
 :root {
-    
-
-
-
-
-
-    
-    --text-color: #312d2d;
-    --bg-color:#fff;
+    --primery-color: red;
+    --primery-background-color:red;
+    --secondary-color:#fff;
+    --secondary-background-color:#fff;
+   
   }
 
 .main-container {
@@ -87,7 +83,7 @@ body {
     font-size: 22px;
     border: none;
     border-radius: 5px;
-    background-color: var(--bg-color);
+    background: var( --secondary-background-color);
     font-weight: 500;
     transition: .5s;
 }
@@ -97,7 +93,7 @@ body {
 }
 
 .catagory button:hover {
-    color: white;
+    color:var(--secondary-color);
     background: black;
 }
 
@@ -121,13 +117,23 @@ body {
 }
 
 .whishlist-button {
-    position: absolute;
+    /* position: absolute;
     top: 2%;
     right: 40px;
     width: 0px;
     opacity: 0;
     transition: 1s;
+    background: var(--secondary-background-color);
+    color: #000; */
 
+    position: absolute;
+    top: 0px;
+    left: 166px;
+    color: #000;
+    right: 166px;
+    width: 42px;
+    opacity: 0;
+    font-size: 5px;
 }
 
 .whishlist-button ul {
@@ -139,17 +145,26 @@ body {
     list-style: none;
     margin: 10px;
     font-size: 20px;
-    background-color: var(--bg-color);
     padding: 10px;
     border-radius: 50%;
     width: 21px;
     height: 21px;
-    transition: 1s;
-   
+    transition: 1s; 
+    
+       
 }
 
+.whishlist-button i {
+    background: white;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 18px;
+}
+
+
 .whishlist-button li:hover {
-    background: red;
+    background:var(--primery-color);
 
 }
 
@@ -160,7 +175,7 @@ body {
 }
 
 .type {
-    color: #fff;
+    color:var(--secondary-color);
     background: rgb(41, 136, 41);
     position: absolute;
     border: none;
@@ -200,7 +215,7 @@ body {
 }
 
 .price {
-    color: red;
+    color:var(--primery-color);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -232,7 +247,7 @@ body {
 .button:hover {
     background: #222;
     transition: .5s;
-    color: var(--bg-color);
+    color: var(--secondary-color);
 }
 
 .menu a {
@@ -256,13 +271,12 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    background-color:var(--bg-color);
+    background:var(--secondary-background-color);
     justify-content: space-around;
     box-shadow: 0px 5px 12px rgb(143, 141, 141);
     padding: 0;
     margin: 0;
     position: sticky;
-
     z-index: 2;
     top: 0;
 }
@@ -293,7 +307,7 @@ body {
 }
 
 .banner-price span {
-    color: red;
+    color:var(--primery-color);
 }
 
 .banner a {
@@ -380,7 +394,7 @@ body {
 
 .view {
     font-size: 16px;
-    color: #fff;
+    color:var(--secondary-color);
     background: #222;
     padding: 14px;
     width: 20%;
@@ -414,10 +428,10 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    top: 60%;
+    top: 52%;
     position: absolute;
     right: 17%;
-  
+    background: var(--secondary-background-color);
     width: 66%;
     padding: 2% 4%;
 }
@@ -425,7 +439,7 @@ body {
 
 
 .off {
-    color: #fff;
+    color:var(--secondary-color);
     background: crimson;
     position: absolute;
     border: none;
@@ -442,7 +456,7 @@ body {
 }
 
 .price-content {
-    color: red;
+    color:var(--primery-color);
     font-size: 117%;
 }
 
@@ -480,7 +494,7 @@ body {
 }
 
 .items span {
-    color: red;
+    color:var(--primery-color);
     font-weight: 550;
     font-size: 112%;
 }
@@ -502,8 +516,8 @@ body {
 }
 
 .Shop {
-    color: #ffff;
-    color:var(--text-color);
+    color: var(--secondary-color);
+    background:black;
     padding: 13px;
     font-size: 52%;
     width: 19%;
@@ -513,7 +527,7 @@ body {
     font-size: 51px;
     width: 100%;
     text-align: center;
-    color: red;
+    color:var(--primery-color);
 }
 
 .coat {
@@ -562,7 +576,7 @@ body {
 }
 
 .date {
-    color: red;
+    color:var(--primery-color);
 }
 
 .title {
@@ -621,7 +635,7 @@ body {
 }
 
 .info {
-    color: #fff;
+    color:var(--secondary-color);
     font-weight: 500;
 }
 
@@ -653,8 +667,8 @@ body {
 }
 
 .sub {
-    color: #fff;
-    background: red;
+    color:var(--secondary-color);
+    background:var(--primery-background-color);
     width: 27%;
     padding: 3%;
     opacity: .65;
@@ -699,8 +713,8 @@ body {
 }
 
 .social li:hover i {
-    color: #fff;
-    background: red;
+    color:var(--secondary-color);
+    background:var(--primery-background-color);
 }
 
 .clothing:hover .active {
@@ -737,7 +751,7 @@ body {
     list-style: none;
     margin: 10px;
     font-size: 20px;
-    background-color: var(--bg-color);
+    background-color:;
     padding: 10px;
     border-radius: 50%;
     width: 21px;
@@ -746,7 +760,7 @@ body {
 }
 
 .whishlist-button li:hover {
-    background: red;
+    background:var(--primery-background-color);
 
 }
 
@@ -828,7 +842,7 @@ body {
 
 
 .shop {
-    color: #ffff;
+    color: var(--secondary-color);
     background: #222222;
     padding: 13px;
     font-size: 52%;
@@ -837,13 +851,13 @@ body {
 }
 
 .Blouson span {
-    color: red;
+    color:var(--primery-color);
     font-weight: 600;
 }
 
 .offer-text {
     text-align: center;
-    Color: #fff;
+    Color:var(--secondary-color);
 
 }
 
@@ -852,7 +866,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    Color: #fff;
+    Color:var(--secondary-color);
     font-size: 16px;
     height: 45px;
     align-items: center;
@@ -880,16 +894,16 @@ body {
 .language {
     display: flex;
     gap: 24px;
-    color: #fff;
+    color:var(--secondary-color);
 }
 
 .top-header a {
-    color: red;
+    color:var(--primery-color);
 }
 
 .privacy {
     text-align: center;
-    color: #fff;
+    color:var(--secondary-color);
     background: #222;
     font-family: none;
     padding: 14px;
@@ -898,7 +912,7 @@ body {
 }
 
 .privacy a {
-    color: #fff;
+    color:var(--secondary-color);
 }
 
 .privacy a:hover {
