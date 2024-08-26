@@ -1,68 +1,23 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
-:root {
-    --primery-color: red;
-    --primery-background-color:red;
-    --secondary-color:#fff;
-    --secondary-background-color:#fff;
-   }
-
-.main-container {
-    width: 90%;
-    margin: auto;
-    margin: 40px auto;
-    overflow: hidden;
-
-}
+@import url("root.css");
 
 .services-container,
 .catagories-container,
-.product-section-title {
-    width: 100%;
-    display: flex;
+.product-section-title,
+.main-container {
     margin: 40px auto;
-    justify-content: space-between;
     gap: 35px;
 }
 
-.service-icon {
+.mb-10px {
     margin-bottom: 10px;
 }
 
-.service-icon i {
+.fs-30px i {
     font-size: 30px;
-
 }
 
-.service {
-    width: 20%;
-    text-align: center;
-
-}
-
-.service-desc {
-    margin: 0;
-}
-
-.service-title {
-    font-weight: bold;
+.p-5px {
     padding: 5px;
-    color:var(--text-color);
-   
-}
-
-.service-desc {
-    color: #666;
-}
-
-.catagory {
-    width: 25%;
-    position: relative;
-
 }
 
 .catagory img {
@@ -71,19 +26,12 @@ body {
     transition: .8s;
 }
 
-.catagory button {
-    position: absolute;
+.catagory-button {
     z-index: 1;
     left: 5%;
-    bottom: 5%;
     height: 49px;
-    width: 80%;
-    margin: auto;
     font-size: 22px;
-    border: none;
     border-radius: 5px;
-    background: var( --secondary-background-color);
-    font-weight: 500;
     transition: .5s;
 }
 
@@ -92,112 +40,114 @@ body {
 }
 
 .catagory button:hover {
-    color:var(--secondary-color);
-    background: black;
+    color: var(--secondary-color);
+    background: var(--secondary-background);
 }
 
 .product-section-title .title {
     font-weight: 400;
     font-size: 45px;
-    width: 50%;
 }
 
-.Products-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.products-container {
     gap: 35px;
-    flex-wrap: wrap;
 }
 
 .product {
     width: 18%;
-    position: relative;
 }
 
 .whishlist-button {
-    /* position: absolute;
-    top: 2%;
-    right: 40px;
-    width: 0px;
-    opacity: 0;
-    transition: 1s;
-    background: var(--secondary-background-color);
-    color: #000; */
-
-    position: absolute;
-    top: 0px;
     left: 166px;
-    color: #000;
     right: 166px;
     width: 42px;
-    opacity: 0;
     font-size: 5px;
 }
 
-.whishlist-button ul {
-    padding: 0;
-    margin: 0;
-}
-
 .whishlist-button li {
-    list-style: none;
     margin: 10px;
     font-size: 20px;
     padding: 10px;
     border-radius: 50%;
     width: 21px;
     height: 21px;
-    transition: 1s; 
-    
-       
+    transition: 1s;
 }
 
 .whishlist-button i {
-    background: white;
-    font-size: 30px;
+    background: var(--primery-background);
     border-radius: 50px;
     padding: 6px;
     font-size: 18px;
 }
 
-
-.whishlist-button li:hover {
-    background:var(--primery-color);
-
+.whishlist-button i:hover {
+    background: var(--danger);
 }
 
-.product:hover.whishlist-button {
+.product:hover .whishlist-button {
     width: 60px;
     right: 10px;
     opacity: 1;
 }
 
-.type {
-    color:var(--secondary-color);
-    background: rgb(41, 136, 41);
-    position: absolute;
-    border: none;
-    top: 45px;
+.type-accessories {
+    top: 18px;
     left: 15px;
-    font-size: 12px;
-    padding: 4px 6px;
-    width: 0x;
-    opacity: 0;
+    font-size: 17px;
 }
 
 .change {
-    top: 12px;
+    background: rgb(41, 136, 41);
+    padding: 3px 10px;
+    border: 0;
+    width: 0;
+    opacity: 0;
+    margin-top: 3px;
+    width: 30px;
+    font-size: 15px;
+}
+
+.product:hover .change {
+    display: block;
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.clothing:hover .change {
+    display: block;
+    opacity: 1;
+    transition: 1.5s;
 }
 
 .offer {
-    top: 17px;
+    color: var(--secondary-color);
+    background: var(--danger);
+    font-size: 14px;
+    padding: 3px 9px 2px 5px;
+    width: 35px;
 }
 
-.product:hover.type {
+
+
+
+.offer-extra {
+    color: var(--secondary-color);
+    background: var(--danger);
+    position: absolute;
+    border: none;
+    font-size: 16px;
+    padding: 6px 6px;
+    width: 66px;
+    left: 15px;
+    top: 20px;
+}
+
+.product:hover .type {
     display: block;
     opacity: 1;
     transition: .4s;
+    width: 50px;
 }
 
 .product img {
@@ -209,13 +159,12 @@ body {
     font-weight: 500;
     border: 1px solid #f0f0f0;
     border-radius: 2px;
-    background-color: va(--bg-color);
     padding: 0 50px;
 }
 
 .price {
-    color:var(--primery-color);
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--danger);
+
     font-weight: 500;
     font-size: 18px;
 }
@@ -237,21 +186,21 @@ body {
     font-family: bold;
     border: 1px solid black;
     border-radius: 2px;
-    background-color: var(--bg-color);
-    color:var(--text-color);
+    background-color: var(--primery-background);
+    color: var(--primery-color);
     padding: 10px 20px;
     margin: 5% 50%;
 }
 
 .button:hover {
-    background: #222;
+    background: var(--secondary-background);
     transition: .5s;
     color: var(--secondary-color);
 }
 
 .menu a {
     text-decoration: none;
-    color:var(--text-color);
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 500;
     font-family: jost, Arial, Helvetica, sans-serif;
@@ -261,7 +210,7 @@ body {
     list-style: none;
 }
 
-.menu ul {
+.menu {
     display: flex;
     gap: 60px;
 }
@@ -270,28 +219,24 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    background:var(--secondary-background-color);
+    background: var(--primery-background);
     justify-content: space-around;
     box-shadow: 0px 5px 12px rgb(143, 141, 141);
-    padding: 0;
-    margin: 0;
     position: sticky;
     z-index: 2;
-    top: 0;
+    min-height: 70px;
 }
 
-.Title {
-    width: 100%;
-
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 .signs i {
-
     font-size: 18px;
-
 }
 
-.signs ul {
+.signs {
     display: flex;
     gap: 15px;
 }
@@ -302,15 +247,15 @@ body {
 
 .banner-price {
     font-size: 18px;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 .banner-price span {
-    color:var(--primery-color);
+    color: var(--danger);
 }
 
 .banner a {
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 .banner a:hover {
@@ -320,7 +265,6 @@ body {
 .banner img {
     width: 98%;
     transition: 0.5s;
-
 }
 
 .banner-container {
@@ -338,7 +282,6 @@ body {
 .banner-title {
     font-size: 35px;
     margin: 0;
-
 }
 
 .banner-content {
@@ -361,7 +304,6 @@ body {
 .main-banner img {
     width: 100%;
     height: 1000px;
-
 }
 
 .main-banner {
@@ -388,13 +330,13 @@ body {
     font-size: 68px;
     margin-top: 7px;
     margin-bottom: 1px;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 .view {
     font-size: 16px;
-    color:var(--secondary-color);
-    background: #222;
+    color: var(--secondary-color);
+    background: var(--secondary-background);
     padding: 14px;
     width: 20%;
     margin: 3% 16%;
@@ -404,7 +346,7 @@ body {
     display: flex;
     gap: 191px;
     font-size: 106%;
-    color:var(--text-color);
+    color: var(--text-color);
     float: right;
     width: 100%;
     padding: 20px 0;
@@ -430,15 +372,13 @@ body {
     top: 52%;
     position: absolute;
     right: 17%;
-    background: var(--secondary-background-color);
+    background: var(--primery-background);
     width: 66%;
     padding: 2% 4%;
 }
 
-
-
 .off {
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     background: crimson;
     position: absolute;
     border: none;
@@ -446,8 +386,6 @@ body {
     left: 15px;
     font-size: 13px;
     padding: 4px 8px;
-
-
 }
 
 .dollar {
@@ -455,16 +393,16 @@ body {
 }
 
 .price-content {
-    color:var(--primery-color);
+    color: var(--danger);
     font-size: 117%;
 }
 
 .fleece-hoodie {
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 .catwalk {
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 .New-fashion {
@@ -473,8 +411,6 @@ body {
 
 .New-fashion img {
     width: 100%;
-
-
 }
 
 .New-fashion {
@@ -493,7 +429,7 @@ body {
 }
 
 .items span {
-    color:var(--primery-color);
+    color: var(--danger);
     font-weight: 550;
     font-size: 112%;
 }
@@ -505,18 +441,18 @@ body {
 
 .Fashion {
     margin: 0;
-    color:var(--text-color);
+    color: var(--text-color);
     font-size: 204%;
 }
 
 .this-month {
     font-size: 77%;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 .Shop {
     color: var(--secondary-color);
-    background:black;
+    background: var(--secondary-background);
     padding: 13px;
     font-size: 52%;
     width: 19%;
@@ -526,7 +462,7 @@ body {
     font-size: 51px;
     width: 100%;
     text-align: center;
-    color:var(--primery-color);
+    color: var(--danger);
 }
 
 .coat {
@@ -575,7 +511,7 @@ body {
 }
 
 .date {
-    color:var(--primery-color);
+    color: var(--danger);
 }
 
 .title {
@@ -583,14 +519,12 @@ body {
 }
 
 .latest-blog a {
-    color:var(--text-color);
+    color: var(--text-color);
     transition: 1s;
-
 }
 
 .latest-blog a:hover {
     text-decoration: none;
-
 }
 
 .mini-banners {
@@ -608,23 +542,22 @@ body {
 
 .information {
     width: 100%;
-    background: #201e1e;
-    padding: 5em 0;
+    background: var(--secondary-background);
+
     margin: 10px 0px 0;
-    
+    color: #666;
 }
 
 .details {
     width: 90%;
     margin: auto;
-    color: #666;
     display: flex;
+    padding: 5em 0;
 }
 
 .Apparel {
     list-style: none;
     padding: 0;
-
 }
 
 .email {
@@ -634,7 +567,7 @@ body {
 }
 
 .info {
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 
@@ -645,7 +578,6 @@ body {
 .options li {
     font-size: 17px;
     line-height: 1.6;
-
 }
 
 .options i {
@@ -666,8 +598,8 @@ body {
 }
 
 .sub {
-    color:var(--secondary-color);
-    background:var(--primery-background-color);
+    color: var(--secondary-color);
+    background: var(--danger);
     width: 27%;
     padding: 3%;
     opacity: .65;
@@ -679,7 +611,6 @@ body {
 
 .sub:hover {
     background: #302c2c;
-
     transition: .5s;
 }
 
@@ -690,17 +621,15 @@ body {
 
 .product:hover .active {
     display: none;
-
 }
 
 .product:hover .non-active {
-
     display: block;
 }
 
 .social i {
     font-size: 15px;
-    background-color: var(--bg-color);
+    background-color: var(--secondary-color);
     padding: 11px;
     border-radius: 50px;
     transition: .5s;
@@ -712,17 +641,15 @@ body {
 }
 
 .social li:hover i {
-    color:var(--secondary-color);
-    background:var(--primery-background-color);
+    color: var(--secondary-color);
+    background: var(--danger);
 }
 
 .clothing:hover .active {
     display: none;
-
 }
 
 .clothing:hover .non-active {
-
     display: block;
 }
 
@@ -733,12 +660,9 @@ body {
 
 .whishlist-button {
     position: absolute;
-    top: 2%;
-    right: 40px;
-    width: 0px;
     opacity: 0;
     transition: 1s;
-
+    left: 46em;
 }
 
 .whishlist-button ul {
@@ -749,18 +673,9 @@ body {
 .whishlist-button li {
     list-style: none;
     margin: 10px;
-    font-size: 20px;
-    background:var(--primery-background-color);
-    padding: 10px;
-    border-radius: 50%;
-    width: 21px;
-    height: 21px;
+    padding: 3px;
+    width: 23px;
     transition: 1s;
-}
-
-.whishlist-button li:hover {
-    background:var(--primery-background-color);
-
 }
 
 .clothing:hover .whishlist-button {
@@ -779,16 +694,15 @@ body {
 
 .sold {
     position: absolute;
-    top: 7%;
-    left: 15px;
-    width: 70px;
+    top: 2rem;
+    left: 0;
+    color: var(--secondary-color);
     background: orange;
     font-size: 12px;
-    padding: 4px;
-    margin: 0px;
+    padding: 4px 3px;
+    width: 5rem;
     font-weight: 600;
-    display: none;
-    border: none;
+    opacity: 0;
 }
 
 .product:hover .sold {
@@ -813,7 +727,6 @@ body {
 .confirmation {
     position: absolute;
     display: block;
-
 }
 
 .first-banner img {
@@ -821,43 +734,42 @@ body {
 }
 
 .first-banner {
+    padding-top: 14em;
     position: relative;
+    background-image: url(../image/sample-1.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
 }
 
-.Blouson {
+.blouson {
     position: absolute;
-    width: 50%;
-    left: 7%;
-    font-weight: 500;
-    top: 33%;
-    font-size: 154%;
-    margin: 0;
+    left: 10%;
+    top: 25%;
+    font-size: 1.5em;
 }
 
 .peach {
     font-size: 3em;
-    margin: 0;
+    margin: 20px 0;
 }
 
 
 .shop {
     color: var(--secondary-color);
-    background: #222222;
-    padding: 13px;
-    font-size: 52%;
-    width: 13%;
+    background: var(--secondary-background);
+    padding: 10px 36px;
     margin-top: 2%;
 }
 
 .Blouson span {
-    color:var(--primery-color);
+    color: var(--danger);
     font-weight: 600;
 }
 
 .offer-text {
     text-align: center;
-    Color:var(--secondary-color);
-
+    Color: var(--secondary-color);
 }
 
 .top-header {
@@ -865,18 +777,16 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    Color:var(--secondary-color);
+    Color: var(--secondary-color);
     font-size: 16px;
     height: 45px;
     align-items: center;
     font-family: Jost, Arial, Helvetica, sans-serif;
-
 }
 
 .season-offer {
     width: 40%;
     text-align: center;
-
 }
 
 .support {
@@ -893,25 +803,22 @@ body {
 .language {
     display: flex;
     gap: 24px;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .top-header a {
-    color:var(--primery-color);
+    color: var(--danger);
 }
 
 .privacy {
     text-align: center;
-    color:var(--secondary-color);
-    background: #222;
     font-family: none;
     padding: 14px;
-    font-size: 19px;
     border-top: 1px solid;
 }
 
 .privacy a {
-    color:var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .privacy a:hover {
@@ -923,7 +830,6 @@ body {
     padding: 7px;
     margin-left: 9px;
     font-family: revert;
-
 }
 
 .cookies {
