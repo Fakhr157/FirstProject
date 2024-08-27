@@ -100,9 +100,6 @@
 .change {
     background: rgb(41, 136, 41);
     padding: 3px 10px;
-    border: 0;
-    width: 0;
-    opacity: 0;
     margin-top: 3px;
     width: 30px;
     font-size: 15px;
@@ -122,25 +119,9 @@
 
 .offer {
     color: var(--secondary-color);
-    background: var(--danger);
     font-size: 14px;
     padding: 3px 9px 2px 5px;
     width: 35px;
-}
-
-
-
-
-.offer-extra {
-    color: var(--secondary-color);
-    background: var(--danger);
-    position: absolute;
-    border: none;
-    font-size: 16px;
-    padding: 6px 6px;
-    width: 66px;
-    left: 15px;
-    top: 20px;
 }
 
 .product:hover .type {
@@ -148,10 +129,6 @@
     opacity: 1;
     transition: .4s;
     width: 50px;
-}
-
-.product img {
-    width: 100%;
 }
 
 .product-section-title button {
@@ -164,7 +141,6 @@
 
 .price {
     color: var(--danger);
-
     font-weight: 500;
     font-size: 18px;
 }
@@ -186,7 +162,6 @@
     font-family: bold;
     border: 1px solid black;
     border-radius: 2px;
-    background-color: var(--primery-background);
     color: var(--primery-color);
     padding: 10px 20px;
     margin: 5% 50%;
@@ -199,37 +174,23 @@
 }
 
 .menu a {
-    text-decoration: none;
-    color: var(--text-color);
     font-size: 18px;
-    font-weight: 500;
     font-family: jost, Arial, Helvetica, sans-serif;
 }
 
-.menu li {
-    list-style: none;
-}
-
 .menu {
-    display: flex;
     gap: 60px;
 }
 
 .menu-section {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background: var(--primery-background);
-    justify-content: space-around;
     box-shadow: 0px 5px 12px rgb(143, 141, 141);
-    position: sticky;
     z-index: 2;
     min-height: 70px;
+    top:0;
 }
 
 .logo {
     font-size: 2.5em;
-    font-weight: bold;
 }
 
 .signs i {
@@ -237,25 +198,11 @@
 }
 
 .signs {
-    display: flex;
     gap: 15px;
-}
-
-.signs li {
-    list-style: none;
 }
 
 .banner-price {
     font-size: 18px;
-    color: var(--text-color);
-}
-
-.banner-price span {
-    color: var(--danger);
-}
-
-.banner a {
-    color: var(--text-color);
 }
 
 .banner a:hover {
@@ -268,7 +215,6 @@
 }
 
 .banner-container {
-    display: flex;
     gap: 40px;
 }
 
@@ -281,19 +227,14 @@
 
 .banner-title {
     font-size: 35px;
-    margin: 0;
 }
 
 .banner-content {
-    width: 50%;
-    position: absolute;
     left: 5%;
-    font-weight: 500;
     top: 10px;
 }
 
 .banner {
-    position: relative;
     width: 33%;
 }
 
@@ -306,13 +247,7 @@
     height: 1000px;
 }
 
-.main-banner {
-    position: relative;
-}
-
-.Deals-On {
-    width: 50%;
-    position: absolute;
+.deals-On {
     left: 39%;
     font-weight: 500;
     top: 48%;
@@ -370,22 +305,9 @@
     align-items: center;
     gap: 8px;
     top: 52%;
-    position: absolute;
     right: 17%;
-    background: var(--primery-background);
     width: 66%;
     padding: 2% 4%;
-}
-
-.off {
-    color: var(--secondary-color);
-    background: crimson;
-    position: absolute;
-    border: none;
-    top: 18px;
-    left: 15px;
-    font-size: 13px;
-    padding: 4px 8px;
 }
 
 .dollar {
@@ -405,23 +327,17 @@
     color: var(--text-color);
 }
 
-.New-fashion {
-    width: 90%;
-}
-
-.New-fashion img {
-    width: 100%;
-}
-
-.New-fashion {
-    position: relative;
-    width: 100%;
+.new-fashion {
     margin: 40px auto;
 }
 
+.new-fashion img {
+    width: 100%;
+}
+
+
+
 .items {
-    width: 50%;
-    position: absolute;
     left: 7%;
     font-weight: 500;
     top: 17%;
@@ -655,12 +571,10 @@
 
 .clothing {
     width: 18%;
-    position: relative;
 }
 
 .whishlist-button {
-    position: absolute;
-    opacity: 0;
+   
     transition: 1s;
     left: 46em;
 }
@@ -693,7 +607,6 @@
 }
 
 .sold {
-    position: absolute;
     top: 2rem;
     left: 0;
     color: var(--secondary-color);
@@ -702,7 +615,6 @@
     padding: 4px 3px;
     width: 5rem;
     font-weight: 600;
-    opacity: 0;
 }
 
 .product:hover .sold {
@@ -711,31 +623,12 @@
     transition: 1s;
 }
 
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.confirmation {
-    position: absolute;
-    display: block;
-}
-
 .first-banner img {
     width: 100%;
 }
 
 .first-banner {
     padding-top: 14em;
-    position: relative;
     background-image: url(../image/sample-1.jpg);
     min-height: 600px;
     background-size: cover;
@@ -743,7 +636,6 @@
 }
 
 .blouson {
-    position: absolute;
     left: 10%;
     top: 25%;
     font-size: 1.5em;
@@ -835,3 +727,4 @@
 .cookies {
     font-size: 21px;
 }
+
