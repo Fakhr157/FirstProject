@@ -155,16 +155,13 @@
 }
 
 .button {
-    width: 170px;
-    height: 53px;
     font-size: 18px;
-    font-weight: 500;
-    font-family: bold;
+    font-weight: bold;
     border: 1px solid black;
     border-radius: 2px;
     color: var(--primery-color);
     padding: 10px 20px;
-    margin: 5% 50%;
+    margin-bottom: 5%;
 }
 
 .button:hover {
@@ -186,7 +183,7 @@
     box-shadow: 0px 5px 12px rgb(143, 141, 141);
     z-index: 2;
     min-height: 70px;
-    top:0;
+    top: 0;
 }
 
 .logo {
@@ -574,7 +571,7 @@
 }
 
 .whishlist-button {
-   
+
     transition: 1s;
     left: 46em;
 }
@@ -727,4 +724,3 @@
 .cookies {
     font-size: 21px;
 }
-
