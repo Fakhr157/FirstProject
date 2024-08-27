@@ -1,81 +1,134 @@
 /* Smartphones (portrait) */
 @media only screen and (max-width: 767px) {
-
-    /* Styles for small screens */
-    .top-header {
-        font-size: 12px;
-    }
+  /* Styles for small screens */
+  .top-header {
+    font-size: 12px;
+  }
 }
 
 /* Tablets (portrait and landscape) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    /* Styles for medium screens */
-    .top-header {
-        font-size: 14px;
-    }
-
+  /* Styles for medium screens */
+  .top-header {
+    font-size: 14px;
+  }
 }
 
 /* Desktops and larger screens */
-@media only screen and (min-width: 1025px)and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* Styles for large screens */
+  .top-header {
+    font-size: 14px;
+  }
 
-    /* Styles for large screens */
-    .top-header {
-        font-size: 14px;
-    }
+  .menu {
+    font-size: 5px;
+    gap: 20px;
+    margin: 0px 0 0px 20px;
+  }
 
-    .menu {
-        font-size: 5px;
-        gap: 20px;
-        margin: 0px 0 0px 20px;
-    }
+  .logo {
+    font-size: 2.5em;
+  }
 
-    .logo {
-        font-size: 2.5em;
-    }
+  .shop {
+    padding: 7px 15px;
+    margin: 2% 0;
+    font-size: 12px;
+  }
 
-    .shop {
-        padding: 9px 20px;
-    }
+  .blouson {
+    font-size: 14px;
+    top: 34%;
+    left: 6%;
+  }
 
-    .blouson {
-        font-size: 14px;
-        top: 34%;
-        left: 6%;
-    }
-
-    .first-banner{
-        background-image: url(../image/sample-1.jpg);
-        min-height: 237px;
-    }
-.catagory-button{
+  .first-banner {
+    background-image: url(../image/sample-1.jpg);
+    min-height: 237px;
+  }
+  .catagory-button {
     height: 40px;
     font-size: 18px;
     border: none;
-}
+  }
 
-.fs-30px i {
+  .fs-30px i {
     font-size: 25px;
-}
+  }
 
-.price{
+  .price {
     color: var(--color-danger);
     font-size: 17px;
     font-weight: bold;
-}
-.product-section-title button{
+  }
+  .product-section-title button {
     height: 41px;
     padding: 0px 13px;
     font-size: 14px;
-}
+  }
 
-.products-container {
+  .products-container {
     gap: 14px;
-}
+  }
 
-.product {
+  .product {
     width: 23%;
     font-size: 15px;
+  }
+
+  .banner-container {
+    gap: 10px;
+  }
+
+  .banner-title {
+    font-size: 20px;
+  }
+  .banner-price {
+    font-size: 14px;
+  }
+
+  .deals-On {
+    left: 35%;
+    top: 30%;
+  }
+
+  .Holiday {
+    font-size: 40px;
+  }
+
+  .Collection {
+    font-size: 18px;
+  }
+
+  .counter {
+    top: 41%;
+    font-size: 11px;
+  }
+
+  .offer {
+    color: var(--secondary-color);
+    font-size: 11px;
+    padding: 3px 9px;
+    text-align: center;
+    width: 20px;
+  }
+
+  .Fashion {
+    margin: 0;
+    font-size: 39px;
+  }
+
+  .orginal {
+    font-size: 16px;
+  }
+  .this-month {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.social i{
+    font-size: 12px;
+    padding: 5px;
 }
 }
