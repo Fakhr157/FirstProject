@@ -464,12 +464,6 @@ p.banner-title {
     padding: 0;
 }
 
-.email {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #666;
-}
-
 .info {
     color: var(--secondary-color);
     font-weight: 500;
@@ -481,8 +475,8 @@ p.banner-title {
 }
 
 .options li {
-    font-size: 17px;
-    line-height: 1.6;
+    /* font-size: 17px; */
+    line-height: 2;
 }
 
 .options i {
@@ -505,10 +499,8 @@ p.banner-title {
 .sub {
     color: var(--secondary-color);
     background: var(--danger);
-    padding: 3% 5%;
+    padding: 10px 17px;
     opacity: .65;
-    line-height: 1.6;
-    font-weight: bold;
     margin: 9px 0;
     border: none;
 }
@@ -707,12 +699,11 @@ p.banner-title {
 }
 
 .accept {
-    width: 73px;
-    padding: 7px;
+    padding: 3px 14px;
     margin-left: 9px;
     font-family: revert;
 }
 
-.cookies {
+/* .cookies {
     font-size: 21px;
-}
+} */
