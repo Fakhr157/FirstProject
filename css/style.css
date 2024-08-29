@@ -58,20 +58,12 @@
 }
 
 .whishlist-button {
-    left: 166px;
-    right: 166px;
+    
+    right: 0%;
     width: 42px;
     font-size: 5px;
-}
-
-.whishlist-button li {
-    margin: 10px;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    width: 21px;
-    height: 21px;
     transition: 1s;
+    
 }
 
 .whishlist-button i {
@@ -81,14 +73,10 @@
     font-size: 18px;
 }
 
-.whishlist-button i:hover {
-    background: var(--danger);
-}
-
 .product:hover .whishlist-button {
-    width: 60px;
-    right: 10px;
-    opacity: 1;
+    
+    right: 1%;
+   
 }
 
 .type-accessories {
@@ -217,8 +205,9 @@
     font-weight: 500;
     color: #443d3d;
     line-height: 3;
-    font-size:15px;
+    font-size: 15px;
 }
+
 p.banner-title {
     font-size: 32px;
 }
@@ -236,7 +225,8 @@ p.banner-title {
 .banner img:hover {
     width: 102%;
 }
-.banner-dollar{
+
+.banner-dollar {
     font-size: 19px;
     font-weight: bold;
 }
@@ -331,8 +321,6 @@ p.banner-title {
     width: 100%;
 }
 
-
-
 .items {
     left: 7%;
     font-weight: 500;
@@ -359,7 +347,6 @@ p.banner-title {
     font-size: 77%;
     color: var(--text-color);
 }
-
 
 .comma {
     font-size: 51px;
@@ -456,7 +443,7 @@ p.banner-title {
     margin: auto;
     display: flex;
     padding: 5em 0;
-    gap:72px;
+    gap: 72px;
 }
 
 .Apparel {
@@ -475,7 +462,6 @@ p.banner-title {
 }
 
 .options li {
-    /* font-size: 17px; */
     line-height: 2;
 }
 
@@ -553,12 +539,6 @@ p.banner-title {
     width: 18%;
 }
 
-.whishlist-button {
-
-    transition: 1s;
-    left: 46em;
-}
-
 .whishlist-button ul {
     padding: 0;
     margin: 0;
@@ -570,11 +550,16 @@ p.banner-title {
     padding: 3px;
     width: 23px;
     transition: 1s;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 21px;
 }
+
 
 .clothing:hover .whishlist-button {
     width: 60px;
-    right: 15px;
+    right: 1%;
     opacity: 1;
 }
 
@@ -585,6 +570,7 @@ p.banner-title {
     width: 15%;
     top: 45px;
 }
+
 
 .sold {
     top: 2rem;
@@ -707,3 +693,8 @@ p.banner-title {
 /* .cookies {
     font-size: 21px;
 } */
+
+
+
+
+
