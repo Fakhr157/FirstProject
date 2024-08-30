@@ -1,14 +1,42 @@
 /* Smartphones (portrait) */
 @media only screen and (min-width: 425px) and (max-width: 767px) {
+
   /* Styles for small screens */
   .top-header {
     font-size: 7px;
+    gap: 2px;
+    height: 28px;
   }
+
   .language {
     gap: 3px;
   }
-  .top-header {
-    gap: 2px;
+
+  .first-banner {
+    padding-top: 13em;
+    min-height: 0px;
+  }
+
+  .support {
+    gap: 4px;
+  }
+
+  .blouson {
+    left: 3%;
+    top: 32%;
+    font-size: 7px;
+  }
+
+  .shop {
+    padding: 5px 2px;
+    ;
+    margin-top: 6%;
+    font-size: 11px;
+  }
+
+  .peach {
+    font-size: 19px;
+    margin: 10px 0;
   }
 
   .menu-section {
@@ -21,6 +49,7 @@
     opacity: 0;
     transition: 0.5s;
   }
+
   .mb-view {
     background: transparent;
   }
@@ -29,18 +58,20 @@
     flex-direction: column;
     gap: 30px;
   }
+
   .hide-button {
     width: 100%;
     text-align: right;
     border: none;
     font-size: 20px;
   }
+
   /* 
   #hide:focus ~ .menu-section {
     opacity: 0;
     width: 0%;
   } */
-  #show:focus ~ .menu-section {
+  #show:focus~.menu-section {
     opacity: 1;
     width: 30%;
   }
@@ -51,6 +82,105 @@
     z-index: 1;
     margin: 5px;
   }
+
+  .services-container,
+  .catagories-container,
+  .product-section-title,
+  .main-container {
+    margin: 12px auto;
+    gap: 8px;
+
+  }
+
+  .catagory-button {
+    height: 22px;
+    font-size: 6px;
+    width: 66%;
+    left: 19%;
+  }
+
+  .service-icon {
+    font-size: 22px;
+  }
+
+  .product-section-title button {
+    font-size: 7px;
+    padding: 0px 22px;
+
+  }
+
+  .product-section-title .title {
+    padding: 0 0px;
+    font-size: 11px;
+    font-size: 20px;
+  }
+
+  .products-container {
+    gap: 7px;
+  }
+
+  .product desc {
+    margin: 10px 3px;
+
+  }
+
+  .product p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .service-title {
+    padding: 0px;
+  }
+
+  .offer {
+    width: 15px;
+    font-size: 9px;
+    padding: 2px 2px;
+  }
+
+  .type-accessories {
+    top: 5px;
+    left: 7px;
+  }
+
+  .button {
+    padding: 3px 6px;
+    font-size: 11px;
+    margin: 3%;
+  }
+
+  .banner-discount {
+    line-height: 0;
+  }
+
+  p.banner-title {
+    font-size: 9px;
+  }
+
+  .banner-content {
+    top: 6%;
+    font-size: 7px;
+  }
+
+  .banner-discount {
+    font-size: 9px;
+    margin: 5px 0;
+  }
+
+  .banner-dollar {
+    font-size: 7px;
+  }
+
+  .banner-price {
+    font-size: 7px;
+    margin: 3px 0;
+  }
+
+  .fs-30px i {
+    font-size: 24px;
+  }
+
 }
 
 /* Tablets (portrait and landscape) */
@@ -368,6 +498,7 @@
 
 /* Desktops and larger screens */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
   /* Styles for large screens */
   .top-header {
     font-size: 14px;
