@@ -1,6 +1,5 @@
 /* Smartphones (portrait) */
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-
   /* Styles for small screens */
   .top-header {
     font-size: 7px;
@@ -29,7 +28,6 @@
 
   .shop {
     padding: 5px 2px;
-    ;
     margin-top: 6%;
     font-size: 11px;
   }
@@ -65,15 +63,9 @@
     border: none;
     font-size: 20px;
   }
-
-  /* 
-  #hide:focus ~ .menu-section {
-    opacity: 0;
-    width: 0%;
-  } */
-  #show:focus~.menu-section {
+  #show:focus ~ .menu-section {
     opacity: 1;
-    width: 30%;
+    width: 50%;
   }
 
   .show-buttons,
@@ -81,6 +73,7 @@
     display: block;
     z-index: 1;
     margin: 5px;
+    font-size: 10px;
   }
 
   .services-container,
@@ -89,7 +82,6 @@
   .main-container {
     margin: 12px auto;
     gap: 8px;
-
   }
 
   .catagory-button {
@@ -103,10 +95,13 @@
     font-size: 22px;
   }
 
+  .service{
+    font-size: 7px;
+  }
+
   .product-section-title button {
     font-size: 7px;
     padding: 0px 22px;
-
   }
 
   .product-section-title .title {
@@ -121,7 +116,6 @@
 
   .product desc {
     margin: 10px 3px;
-
   }
 
   .product p {
@@ -131,12 +125,16 @@
 
   .service-title {
     padding: 0px;
+    
   }
 
   .offer {
-    width: 15px;
-    font-size: 9px;
-    padding: 2px 2px;
+    width: 19px;
+    font-size: 8px;
+    padding: 1px 2px;
+  }
+  .offer-content {
+    font-size: 8px;
   }
 
   .type-accessories {
@@ -159,12 +157,32 @@
   }
 
   .banner-content {
-    top: 6%;
+    top: 17%;
     font-size: 7px;
+    left: 3%;
+  }
+
+  .Holiday {
+    font-size: 20px;
+  }
+
+  .Collection {
+    font-size: 10px;
+  }
+
+  .view {
+    font-size: 8px;
+    margin: 2% 0px;
+    padding: 6px 4px;
+  }
+
+  .deals-On {
+    left: 31%;
+    top: 18%;
   }
 
   .banner-discount {
-    font-size: 9px;
+    font-size: 7px;
     margin: 5px 0;
   }
 
@@ -178,9 +196,167 @@
   }
 
   .fs-30px i {
-    font-size: 24px;
+    font-size: 17px;
   }
 
+  .information {
+    overflow: hidden;
+    margin: 5px 0;
+  }
+  .banner-link {
+    margin: 5px 0px;
+  }
+  .offers ul {
+    gap: 69px;
+    padding: 9px 0;
+    font-size: 62%;
+    padding: 8px 0;
+  }
+
+  .day-deal {
+    font-size: 17px;
+    margin: 6px auto;
+  }
+  .main-container {
+    margin: 0px auto;
+  }
+  .counter {
+    font-size: 7px;
+    top: 36%;
+  }
+  .catwalk {
+    margin: 3px 0;
+  }
+  .price-content {
+    font-size: 7px;
+    margin: 3px 0;
+  }
+  .orginal {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+  .Fashion {
+    font-size: 15px;
+  }
+
+  .this-month {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .shop {
+    padding: 3px 1px;
+    /* margin-top: 0%; */
+    font-size: 9px;
+  }
+  .items {
+    left: 4%;
+    /* font-weight: 500; */
+    top: 6%;
+    font-size: 20px;
+  }
+
+  .new-fashion {
+    margin: 15px auto;
+  }
+
+  .comma {
+    font-size: 30px;
+  }
+
+  .description {
+    width: 100%;
+    text-align: justify;
+    margin: 8px 0;
+    line-height: 1.4;
+  }
+  .name {
+    text-align: center;
+    font-size: 22px;
+    padding: 13px 0 8px;
+  }
+  .Sub-heading {
+    font-size: 16px;
+  }
+
+  .blog {
+    font-size: 22px;
+    margin: 13px 0px;
+  }
+  .latest-blog {
+    gap: 4px;
+  }
+
+  .date {
+    font-size: 9px;
+    margin: 5px 0;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 9px;
+    margin: 4px 0;
+  }
+  .desc {
+    color: #666666;
+    font-size: 5px;
+  }
+  .latest-blog a {
+    font-size: 9px;
+  }
+  .mini-banners {
+    gap: 2px;
+  }
+
+  .info {
+    font-size: 8px;
+  }
+  .details {
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  .options li {
+    line-height: 1;
+    font-size: 7px;
+  }
+
+  .options i {
+    font-size: 10px;
+    padding-right: 3px;
+  }
+
+  .options {
+    width: 20%;
+  }
+  .social i {
+    font-size: 9px;
+    padding: 3px;
+  }
+
+  .signs {
+    gap: 19px;
+    margin: 0px 3px;
+  }
+  .sub {
+    padding: 3px 3px;
+    margin: 8px 0;
+    font-size: 9px;
+  }
+  .privacy {
+    font-size: 8px;
+    padding: 5px;
+    
+  }
+  .accept {
+    padding: 1px 6px;
+    font-size: 8px;
+    padding: 0px 1px;
+    margin-left: 0px;
+  }
+  .Apparel {
+    margin: 8px 0px;
+  }
 }
 
 /* Tablets (portrait and landscape) */
@@ -271,10 +447,10 @@
   }
 
   .catagory-button {
-    height: 27px;
+    height: 17px;
     font-size: 12px;
-    left: 7%;
-    width: 77%;
+    left:13%;
+    width:63%;
   }
 
   .product-section-title button {
@@ -498,7 +674,6 @@
 
 /* Desktops and larger screens */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-
   /* Styles for large screens */
   .top-header {
     font-size: 14px;
@@ -575,6 +750,10 @@
     font-size: 14px;
   }
 
+  .banner-content {
+  left: 2%;
+    top: 10%;
+  }
   .deals-On {
     left: 35%;
     top: 30%;
@@ -618,5 +797,8 @@
   .social i {
     font-size: 12px;
     padding: 5px;
+  }
+  .button{
+    margin-bottom: 3%;
   }
 }
