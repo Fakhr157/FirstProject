@@ -6,6 +6,7 @@
     gap: 2px;
     height: 28px;
   }
+  
 
   .language {
     gap: 3px;
@@ -109,15 +110,18 @@
     font-size: 11px;
     font-size: 20px;
   }
-
-  /* .products-container {
-    gap: 7px;
-  } */
-
   .product desc {
     margin: 10px 3px;
   }
 
+  .products-container{
+    flex-grow:1;
+  }
+
+  .porduct{
+    flex-basis:260px;
+  }
+  
   .product p {
     font-size: 12px;
     margin: 0;
@@ -465,6 +469,7 @@
 
   .product {
     width: 23%;
+    flex-basis:150px;
   }
 
   .offer {
@@ -736,6 +741,8 @@
   .product {
     width: 23%;
     font-size: 15px;
+    flex-basis:180px;
+   
   }
 
   .banner-container {

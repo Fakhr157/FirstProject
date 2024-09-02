@@ -51,13 +51,13 @@
 }
 
 .products-container {
-  gap: 30px;
+  gap: 14px;
 flex-grow:1;
 }
 
 .product {
-  /* width: 18%; */
-  flex-basis:300px;
+  width: 18%;
+  flex-basis:250px;
 }
 
 .whishlist-button {
@@ -236,6 +236,7 @@ p.banner-title {
 .main-banner img {
   width: 100%;
 }
+
 
 .deals-On {
   left: 33%;
@@ -688,12 +689,11 @@ p.banner-title {
   font-family: revert;
 }
 
-/* .cookies {
-    font-size: 21px;
-} */
 
 .show-buttons,
 .hide-button {
   display: none;
 }
+
+
 
