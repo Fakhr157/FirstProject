@@ -6,6 +6,7 @@
 .main-container {
   margin: 40px auto;
   gap: 35px;
+ 
 }
 
 .mb-10px {
@@ -50,11 +51,13 @@
 }
 
 .products-container {
-  gap: 35px;
+  gap: 30px;
+flex-grow:1;
 }
 
 .product {
-  width: 18%;
+  /* width: 18%; */
+  flex-basis:300px;
 }
 
 .whishlist-button {
@@ -693,3 +696,4 @@ p.banner-title {
 .hide-button {
   display: none;
 }
+
