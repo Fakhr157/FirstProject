@@ -210,7 +210,7 @@ flex-grow:1;
   font-size: 15px;
 }
 
-p.banner-title {
+.banner-title {
   font-size: 32px;
 }
 
@@ -281,7 +281,7 @@ p.banner-title {
   display: flex;
   gap: 2%;
   justify-content: space-around;
- 
+ flex-wrap: wrap;
 }
 
 .day-deal {
@@ -295,7 +295,7 @@ p.banner-title {
   justify-content: space-around;
   align-items: center;
   gap: -14px;
-  top: 52%;
+ bottom: 34%;
   right: 2%;
   width: 88%;
   padding: 2% 4%;
@@ -388,11 +388,12 @@ p.banner-title {
 .latest-blog {
   width: 100%;
   display: flex;
-  gap: 25px;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .blog-item {
-  width: 25%;
+  width: 23%;
 }
 
 .blog-item img {
@@ -426,8 +427,9 @@ p.banner-title {
   margin: auto;
   overflow: hidden;
   display: flex;
-  gap: 10px;
-  justify-content: space-evenly;
+  gap: 4px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .mini-banners img {
@@ -476,7 +478,7 @@ p.banner-title {
 
 .clothing {
   width: 20%;
-  flex-basis: 20%;
+  /* flex-basis: 20%; */
 }
 
 .clothing img {
