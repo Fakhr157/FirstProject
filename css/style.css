@@ -280,6 +280,8 @@ p.banner-title {
   width: 100%;
   display: flex;
   gap: 2%;
+  justify-content: space-around;
+ 
 }
 
 .day-deal {
@@ -474,6 +476,7 @@ p.banner-title {
 
 .clothing {
   width: 20%;
+  flex-basis: 20%;
 }
 
 .clothing img {

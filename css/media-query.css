@@ -1,12 +1,13 @@
 /* Smartphones (portrait) */
 @media only screen and (min-width: 425px) and (max-width: 767px) {
+
   /* Styles for small screens */
   .top-header {
     font-size: 7px;
     gap: 2px;
     height: 28px;
   }
-  
+
 
   .language {
     gap: 3px;
@@ -64,7 +65,8 @@
     border: none;
     font-size: 20px;
   }
-  #show:focus ~ .menu-section {
+
+  #show:focus~.menu-section {
     opacity: 1;
     width: 50%;
   }
@@ -96,7 +98,7 @@
     font-size: 22px;
   }
 
-  .service{
+  .service {
     font-size: 7px;
   }
 
@@ -110,18 +112,19 @@
     font-size: 11px;
     font-size: 20px;
   }
+
   .product desc {
     margin: 10px 3px;
   }
 
-  .products-container{
-    flex-grow:1;
+  .products-container {
+    flex-grow: 1;
   }
 
-  .porduct{
-    flex-basis:260px;
+  .porduct {
+    flex-basis: 260px;
   }
-  
+
   .product p {
     font-size: 12px;
     margin: 0;
@@ -129,7 +132,7 @@
 
   .service-title {
     padding: 0px;
-    
+
   }
 
   .offer {
@@ -137,6 +140,7 @@
     font-size: 8px;
     padding: 1px 2px;
   }
+
   .offer-content {
     font-size: 8px;
   }
@@ -207,9 +211,11 @@
     overflow: hidden;
     margin: 5px 0;
   }
+
   .banner-link {
     margin: 5px 0px;
   }
+
   .offers ul {
     gap: 69px;
     padding: 9px 0;
@@ -221,24 +227,30 @@
     font-size: 17px;
     margin: 6px auto;
   }
+
   .main-container {
     margin: 0px auto;
   }
+
   .counter {
     font-size: 7px;
     top: 36%;
   }
+
   .catwalk {
     margin: 3px 0;
   }
+
   .price-content {
     font-size: 7px;
     margin: 3px 0;
   }
+
   .orginal {
     font-size: 10px;
     margin: 5px 0;
   }
+
   .Fashion {
     font-size: 15px;
   }
@@ -253,6 +265,7 @@
     /* margin-top: 0%; */
     font-size: 9px;
   }
+
   .items {
     left: 4%;
     /* font-weight: 500; */
@@ -274,11 +287,13 @@
     margin: 8px 0;
     line-height: 1.4;
   }
+
   .name {
     text-align: center;
     font-size: 22px;
     padding: 13px 0 8px;
   }
+
   .Sub-heading {
     font-size: 16px;
   }
@@ -287,6 +302,7 @@
     font-size: 22px;
     margin: 13px 0px;
   }
+
   .latest-blog {
     gap: 4px;
   }
@@ -301,13 +317,16 @@
     font-size: 9px;
     margin: 4px 0;
   }
+
   .desc {
     color: #666666;
     font-size: 5px;
   }
+
   .latest-blog a {
     font-size: 9px;
   }
+
   .mini-banners {
     gap: 2px;
   }
@@ -315,6 +334,7 @@
   .info {
     font-size: 8px;
   }
+
   .details {
     gap: 20px;
     padding: 10px 0;
@@ -333,6 +353,7 @@
   .options {
     width: 20%;
   }
+
   .social i {
     font-size: 9px;
     padding: 3px;
@@ -342,24 +363,36 @@
     gap: 19px;
     margin: 0px 3px;
   }
+
   .sub {
     padding: 3px 3px;
     margin: 8px 0;
     font-size: 9px;
   }
+
   .privacy {
     font-size: 8px;
     padding: 5px;
-    
+
   }
+
   .accept {
     padding: 1px 6px;
     font-size: 8px;
     padding: 0px 1px;
     margin-left: 0px;
   }
+
   .Apparel {
     margin: 8px 0px;
+  }
+
+  .whishlist-button {
+    display: none;
+  }
+  
+  .clothing{
+    flex-basis: 260px;
   }
 }
 
@@ -453,8 +486,8 @@
   .catagory-button {
     height: 17px;
     font-size: 12px;
-    left:13%;
-    width:63%;
+    left: 13%;
+    width: 63%;
   }
 
   .product-section-title button {
@@ -469,7 +502,7 @@
 
   .product {
     width: 23%;
-    flex-basis:150px;
+    flex-basis: 150px;
   }
 
   .offer {
@@ -669,6 +702,7 @@
     padding: 6px;
     font-size: 14px;
   }
+
   .sold {
     top: 27px;
     width: 52px;
@@ -679,6 +713,7 @@
 
 /* Desktops and larger screens */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
   /* Styles for large screens */
   .top-header {
     font-size: 14px;
@@ -741,8 +776,8 @@
   .product {
     width: 23%;
     font-size: 15px;
-    flex-basis:180px;
-   
+    flex-basis: 180px;
+
   }
 
   .banner-container {
@@ -758,9 +793,10 @@
   }
 
   .banner-content {
-  left: 2%;
+    left: 2%;
     top: 10%;
   }
+
   .deals-On {
     left: 35%;
     top: 30%;
@@ -805,7 +841,8 @@
     font-size: 12px;
     padding: 5px;
   }
-  .button{
+
+  .button {
     margin-bottom: 3%;
   }
 }
